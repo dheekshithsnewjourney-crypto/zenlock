@@ -1,0 +1,6 @@
+# Blank issues off: every report uses a form. Security reports go to the private form.
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security problem
+    url: https://github.com/dheekshithsnewjourney-crypto/zenlock/security/advisories/new
+    about: Report it in private. Do not open a public issue.

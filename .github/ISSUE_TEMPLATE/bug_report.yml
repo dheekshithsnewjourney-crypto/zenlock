@@ -1,0 +1,52 @@
+name: Bug report
+description: Something in ZenLock does not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you for the report. Do not paste private data here; this page is public.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: Tell us what you saw, and what you expected to see.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to see it again
+      placeholder: |
+        1. Open ZenLock
+        2. Pick 1 minute and press START ZEN MODE
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where?
+      options:
+        - Setup screen
+        - Zen lock screen
+        - Both
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Phone model and Android version
+      placeholder: For example, POCO X7 Pro, HyperOS 2, Android 15
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode
+      options:
+        - Device owner (Iron Mode)
+        - Device admin only
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else

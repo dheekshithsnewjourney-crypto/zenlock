@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ZenLock banner</title>
+<!-- Drawn in code from ZenLock's own look: black ground, its teal START button, Roboto (Android's font),
+     and real phone screenshots. Render: render-card.js banner.html banner.png --w 1600 --h 800 --scale 2 -->
+<style>
+html, body { margin: 0; }
+body { width: 1600px; height: 800px; overflow: hidden; position: relative; background: #050607; color: #ECEFEF; font-family: "Roboto", sans-serif; }
+body::before { content: ""; position: absolute; right: -200px; top: -150px; width: 1100px; height: 1100px; border-radius: 50%; background: radial-gradient(circle, rgba(43,217,203,.13), rgba(43,217,203,0) 62%); }
+.word { position: absolute; left: 64px; top: 60px; font-weight: 500; font-size: 20px; letter-spacing: .55em; }
+.tag { position: absolute; left: 64px; top: 94px; font-size: 18px; color: #7E8A89; letter-spacing: .02em; }
+h1 { position: absolute; left: 64px; top: 160px; width: 720px; margin: 0; font-weight: 700; font-size: 66px; line-height: 1.04; letter-spacing: -0.02em; }
+h1 em { font-style: normal; color: #2BD9CB; }
+.timer { position: absolute; left: 64px; top: 330px; font-weight: 300; font-size: 22px; color: #9AA6A5; }
+.timer b { font-weight: 300; color: #ECEFEF; font-size: 22px; }
+.feats { position: absolute; left: 64px; top: 390px; width: 700px; margin: 0; padding: 0; list-style: none; }
+.feats li { display: grid; grid-template-columns: 34px 1fr; padding: 13px 0; border-top: 1px solid #1C2324; font-size: 21px; font-weight: 500; }
+.feats li::before { content: ""; width: 12px; height: 12px; margin-top: 7px; background: #2BD9CB; border-radius: 2px; }
+.feats small { grid-column: 2; display: block; margin-top: 3px; font-size: 16px; font-weight: 400; color: #8B9796; }
+.stack { position: absolute; left: 64px; bottom: 40px; font-size: 16px; color: #7E8A89; letter-spacing: .02em; }
+.stack b { color: #ECEFEF; font-weight: 500; }
+.phone { position: absolute; border-radius: 30px; overflow: hidden; border: 5px solid #1A1F20; box-shadow: 0 28px 60px rgba(0,0,0,.6); background: #000; }
+.phone img { display: block; width: 100%; }
+.p1 { left: 800px; top: 128px; width: 224px; }
+.p2 { left: 1046px; top: 56px; width: 262px; z-index: 2; box-shadow: 0 0 0 1px rgba(43,217,203,.35), 0 28px 60px rgba(0,0,0,.6); }
+.p3 { left: 1330px; top: 128px; width: 224px; }
+.cap { position: absolute; top: 700px; font-size: 15px; color: #7E8A89; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="word">ZENLOCK</div>
+  <div class="tag">Total focus. No escape.</div>
+  <h1>Lock the phone.<br><em>Keep only your apps.</em></h1>
+  <div class="timer">Pick a time from <b>1 minute</b> to <b>30 days</b>. The lock ends when the timer does.</div>
+  <ul class="feats">
+    <li>Up to 30 allowed apps<small>Messages, WhatsApp and Camera always stay on</small></li>
+    <li>Iron Mode, as device owner<small>A real kiosk lock that comes back after a reboot</small></li>
+    <li>Browser lockout<small>Suspends installed browsers · 24 h cooldown to turn off</small></li>
+    <li>Preset lists and notification badges<small>Save app lists · see unread counts on the lock screen</small></li>
+  </ul>
+  <div class="stack"><b>Android app</b> · Java · minSdk 26 · targetSdk 34 · no account, no internet</div>
+  <div class="phone p1"><img src="../images/setup.jpeg" alt=""></div>
+  <div class="phone p2"><img src="../images/lock.jpeg" alt=""></div>
+  <div class="phone p3"><img src="../images/apps.jpeg" alt=""></div>
+</body>
+</html>

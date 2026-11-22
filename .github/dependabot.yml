@@ -1,0 +1,10 @@
+# Weekly update checks for the Gradle build. Nothing merges by itself.
+version: 2
+updates:
+  - package-ecosystem: gradle
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      gradle:
+        patterns: ["*"]

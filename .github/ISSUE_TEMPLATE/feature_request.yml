@@ -1,0 +1,21 @@
+name: Idea
+description: Suggest a change or a new feature.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What gets in your way today?
+      description: Describe the moment when you need this. A real example helps most.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would help?
+    validations:
+      required: true
+  - type: textarea
+    id: other
+    attributes:
+      label: What do you use now instead?
